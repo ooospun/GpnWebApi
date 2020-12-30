@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GpnWebApi</name>
+    </assembly>
+    <members>
+        <member name="T:GpnWebApi.Controllers.IndicatorsController">
+            <summary>
+            Справочник индикаторов силосных башен
+            </summary>
+        </member>
+        <member name="M:GpnWebApi.Controllers.IndicatorsController.GetIndicators">
+            <summary>
+            Получить список индикаторов силосных башен
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.IndicatorsController.GetIndicator(System.Guid)">
+            <summary>
+            Получить индикатор силосной башни
+            </summary>
+            <param name="id">Код индикатора</param>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.IndicatorsController.PutIndicator(System.Guid,GpnWebApi.Models.Indicator)">
+            <summary>
+            Изменить индикатор силосной башни
+            </summary>
+            <param name="id">Код индикатора</param>
+            <param name="indicator">Информация об индикаторе</param>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.IndicatorsController.PostIndicator(GpnWebApi.Models.Indicator)">
+            <summary>
+            Добавить новый индикатор силосной башни
+            </summary>
+            <param name="indicator">Информация об индикаторе</param>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.IndicatorsController.DeleteIndicator(System.Guid)">
+            <summary>
+            Удалить индикатор силосной башни
+            </summary>
+            <param name="id">Код индикатора</param>
+            <returns></returns>
+        </member>
+        <member name="T:GpnWebApi.Controllers.RolesController">
+            <summary>
+            Справочник ролей пользователя
+            </summary>
+        </member>
+        <member name="M:GpnWebApi.Controllers.RolesController.GetRoles">
+            <summary>
+            Получить список ролей
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.RolesController.GetRole(System.Guid)">
+            <summary>
+            Получить роль по коду
+            </summary>
+            <param name="id">Код роли</param>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.RolesController.PutRole(System.Guid,GpnWebApi.Models.Role)">
+            <summary>
+            Изменить роль пользователя
+            </summary>
+            <param name="id">Код роли</param>
+            <param name="role">Информация о роли</param>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.RolesController.PostRole(GpnWebApi.Models.Role)">
+            <summary>
+            Добавить новую роль
+            </summary>
+            <param name="role">Информация о роли</param>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.RolesController.DeleteRole(System.Guid)">
+            <summary>
+            Удалить роль
+            </summary>
+            <param name="id">Код роли</param>
+            <returns></returns>
+        </member>
+        <member name="T:GpnWebApi.Controllers.UserRolesController">
+            <summary>
+            Роли пользователя
+            </summary>
+        </member>
+        <member name="M:GpnWebApi.Controllers.UserRolesController.GetUserRoles(System.Guid)">
+            <summary>
+            Список ролей пользователя
+            </summary>
+            <param name="userId">Код пользователя</param>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.UserRolesController.GetUserRole(System.Guid)">
+            <summary>
+            Получить запись по коду
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.UserRolesController.PutUserRole(System.Guid,GpnWebApi.Models.UserRole)">
+            <summary>
+            Изменить роль пользователя
+            </summary>
+            <param name="id">Код записи</param>
+            <param name="userRole">Информация о роли</param>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.UserRolesController.PostUserRole(GpnWebApi.Models.UserRole)">
+            <summary>
+            Добавить новую запись
+            </summary>
+            <param name="userRole">Информация о роли</param>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.UserRolesController.DeleteUserRole(System.Guid)">
+            <summary>
+            Удалить роль пользователя
+            </summary>
+            <param name="id">Код записи</param>
+            <returns></returns>
+        </member>
+        <member name="T:GpnWebApi.Controllers.UsersController">
+            <summary>
+            Справочник пользователей системы
+            </summary>
+        </member>
+        <member name="M:GpnWebApi.Controllers.UsersController.GetUsers">
+            <summary>
+            Получить список пользователей
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.UsersController.GetUser(System.Guid)">
+            <summary>
+            Получить пользователя по коду
+            </summary>
+            <param name="id">Код пользователя</param>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.UsersController.PutUser(System.Guid,GpnWebApi.Models.User)">
+            <summary>
+            Изменить пользователя
+            </summary>
+            <param name="id">Код пользователя</param>
+            <param name="user">Информация о пользователе</param>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.UsersController.PostUser(GpnWebApi.Models.User)">
+            <summary>
+            Создать пользователя
+            </summary>
+            <param name="user">Информация о пользователе</param>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.UsersController.DeleteUser(System.Guid)">
+            <summary>
+            Удалить пользователя
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GpnWebApi.Controllers.UsersController.Login(GpnWebApi.Models.Login)">
+            <summary>
+            Авторизация пользователя
+            </summary>
+            <param name="request">Данные для авторизации пользователя </param>
+            <returns></returns>
+        </member>
+        <member name="T:GpnWebApi.Models.Login">
+            <summary>
+            Информация для авторизации
+            </summary>
+        </member>
+        <member name="P:GpnWebApi.Models.Login.Email">
+            <summary>
+            Электронная почта
+            </summary>
+        </member>
+        <member name="P:GpnWebApi.Models.Login.Password">
+            <summary>
+            Хэш пароля пользователя
+            </summary>
+        </member>
+    </members>
+</doc>

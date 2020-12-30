@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/GpnWebApiapi2/apis/GpnWebApi",
+      "type": "apis.azure"
+    },
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/gpnwebapidbserver/databases/GpnWebApi_db",
+      "type": "mssql.azure",
+      "connectionId": "GpnDB",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}
